@@ -1,0 +1,152 @@
+<svg width="100%" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1035" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="glowCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.35" />
+      <circle cx="40" cy="40" r="1.5" fill="#38bdf8" fill-opacity="0.25" />
+    </pattern>
+
+    <!-- Blur Filter -->
+    <filter id="blurFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .code-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; }
+    .title-font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-weight: 800; }
+    .desc-font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-weight: 400; }
+    
+    /* Subtle background dynamic pulses that stay strictly in background */
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.5; }
+      50% { transform: scale(1.15) translate(20px, -15px); opacity: 0.8; }
+    }
+    @keyframes pulseOrb2 {
+      0%, 100% { transform: scale(1) translate(0px, 0px); opacity: 0.4; }
+      50% { transform: scale(1.2) translate(-25px, 20px); opacity: 0.7; }
+    }
+    @keyframes streamData {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatPill {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    
+    .orb-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
+    .orb-2 { animation: pulseOrb2 10s ease-in-out infinite; transform-origin: 1000px 180px; }
+    .flow-line { stroke-dasharray: 8, 8; animation: streamData 4s linear infinite; }
+    .pill-anim { animation: floatPill 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Base Background -->
+  <rect width="1200" height="280" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Glowing Atmospheric Orbs (Strictly Background) -->
+  <g filter="url(#blurFilter)">
+    <circle class="orb-1" cx="200" cy="90" r="130" fill="url(#glowCyan)" />
+    <circle class="orb-2" cx="1020" cy="190" r="140" fill="url(#glowPurple)" />
+    <circle cx="600" cy="240" r="90" fill="#3b82f6" fill-opacity="0.25" />
+  </g>
+
+  <!-- Grid Overlay -->
+  <rect width="1200" height="280" rx="16" fill="url(#grid)" />
+
+  <!-- Dynamic Network / Flow Connections (Strictly Behind Text) -->
+  <g opacity="0.35">
+    <path class="flow-line" d="M 120 70 Q 280 180 440 120 T 780 160 T 1080 80" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path class="flow-line" d="M 80 210 Q 300 90 560 200 T 920 110 T 1140 220" fill="none" stroke="#a855f7" stroke-width="1.5" />
+  </g>
+
+  <!-- Foreground Main Title & Content (Crisp, High Contrast, Perfectly Legible) -->
+  <g id="foreground-content">
+    <!-- Top Pill Badge -->
+    <g class="pill-anim" transform="translate(60, 36)">
+      <rect width="250" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6" />
+      <circle cx="16" cy="14" r="5" fill="#10b981">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="30" y="18" fill="#e2e8f0" class="code-text" font-size="12" font-weight="600">⚡ DATA APP FRAMEWORKS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="60" y="112" fill="url(#titleGrad)" class="title-font" font-size="44" letter-spacing="-1">Awesome Data App Development</text>
+    
+    <!-- Subtitle -->
+    <text x="60" y="148" fill="#94a3b8" class="desc-font" font-size="19">
+      Curated open-source frameworks, low-code tools &amp; visual builders for modern data apps
+    </text>
+
+    <!-- Interactive / Dynamic Feature Badges in Foreground -->
+    <g transform="translate(60, 185)">
+      <!-- Pill 1: Python Data Apps -->
+      <g transform="translate(0, 0)">
+        <rect width="160" height="38" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+        <text x="18" y="24" fill="#38bdf8" class="title-font" font-size="14">🐍 Python Apps</text>
+      </g>
+
+      <!-- Pill 2: Low-Code Tools -->
+      <g transform="translate(175, 0)">
+        <rect width="180" height="38" rx="10" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4" />
+        <text x="18" y="24" fill="#818cf8" class="title-font" font-size="14">🛠️ Low-Code / Internal</text>
+      </g>
+
+      <!-- Pill 3: Dashboards & BI -->
+      <g transform="translate(370, 0)">
+        <rect width="170" height="38" rx="10" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.4" />
+        <text x="18" y="24" fill="#c084fc" class="title-font" font-size="14">📊 Dashboards &amp; BI</text>
+      </g>
+
+      <!-- Pill 4: Self-Hosted -->
+      <g transform="translate(555, 0)">
+        <rect width="150" height="38" rx="10" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1" stroke-opacity="0.4" />
+        <text x="18" y="24" fill="#34d399" class="title-font" font-size="14">🔒 Self-Hosted</text>
+      </g>
+    </g>
+
+    <!-- Bottom Status Stats / Metadata -->
+    <g transform="translate(60, 252)">
+      <text x="0" y="0" fill="#64748b" class="code-text" font-size="12">⭐ Community Curated</text>
+      <circle cx="150" cy="-4" r="2" fill="#475569" />
+      <text x="165" y="0" fill="#64748b" class="code-text" font-size="12">🚀 Production Proven</text>
+      <circle cx="310" cy="-4" r="2" fill="#475569" />
+      <text x="325" y="0" fill="#64748b" class="code-text" font-size="12">🌐 SaaS &amp; Open Source</text>
+    </g>
+  </g>
+</svg>
