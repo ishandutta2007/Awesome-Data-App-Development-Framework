@@ -32,61 +32,27 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global data app and low-code/internal tool development platform market is estimated at **$31B–$37B in 2025** and projected to reach **$48B–$66B by 2026** (CAGR ~25–30%). The sector is **moderately fragmented**—while major cloud data platforms (e.g., Snowflake) and low-code leaders (e.g., Retool, Hugging Face) command significant market share and brand recognition, the ecosystem avoids winner-take-all dynamics due to rapid proliferation of open-source frameworks, specialized Python UI runtimes, and strict enterprise on-premise/data-privacy requirements.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Snowflake Streamlit](https://www.snowflake.com/)**
-
-  **Streamlit apps running natively in Snowflake**. **Pricing**: **No separate Streamlit fee**—you pay for Snowflake compute. Two runtimes: **Warehouse runtime** (XS warehouse ~1 credit/hour, auto-suspends ~15 min after last viewer); **Container runtime** (default for new apps, smallest node ~0.11 credits/hour, ~79 credits/month, packs three dashboards per node) . **Free tier**: Snowflake Trial gives **$400 free credits for 30 days**; Streamlit apps can be built on trial . **Best for**: Snowflake customers wanting data apps without data leaving the warehouse—**trade-off**: compute costs accrue while apps are active; auto-suspend reliability issues reported as of October 2026 .
-
-
-
-- **[Retool](https://retool.com/)**
-
-  **Low-code internal tool builder** with AI credits. **Pricing**: **Free** (up to 5 users, unlimited apps, 500 workflow runs/month, 5GB storage); **Team $10/builder + $5/internal user monthly** (annual: $8/$4), **1,000 AI credits/month**; **Business $50/builder + $15/internal user** (annual: $40/$12), **3,000 AI credits**; **Enterprise** quote-only, 10,000 AI credits . **Free tier**: Yes, 5 users. **Best for**: teams building internal admin panels and dashboards—**trade-off**: per-builder + per-user pricing stacks at scale.
-
-
-
-- **[Anvil](https://anvil.works/)**
-
-  **Full-stack web app builder** for Python developers. **Pricing**: **Free** (commercial use allowed, Anvil branding, shared hosting, no custom domain, no scheduled tasks); **Hobby** (removes branding, custom domain); **Business** (higher performance, collaboration); **On-site** deployment available . **Free tier**: Yes, commercial use with branding. **Best for**: Python developers wanting full-stack apps with minimal frontend code—**trade-off**: free plan has performance limits for low-throughput apps only; custom domain requires paid plan .
-
-
-
-- **[Superblocks](https://www.superblocks.com/)**
-
-  **Internal tool builder** with AI agent. **Pricing**: **No free tier**—**14-day trial on Teams**; **Teams $125/month flat** (up to 15 builders, 1 hosted app, 100 Governed Agent Units); **Enterprise** quote-only. Additional apps **$10/app/month** . **Free tier**: Trial only. **Best for**: teams with several builders wanting flat pricing—**trade-off**: no free tier; per-app charges after the first; end-user terms require Enterprise conversation .
-
-
-
-- **[Gradio](https://www.gradio.app/)**
-
-  **Python library for ML demos and data apps**. **Pricing**: **Open-source library is free**; Hugging Face Spaces offers **free hosting** with ZeroGPU quotas; paid hardware upgrades available. **Free tier**: Free library and HF Spaces hosting. **Best for**: ML practitioners wanting quick demos and interfaces—**trade-off**: demo-focused; not a full low-code platform for complex internal tools.
-
-
-
-- **[Dash by Plotly](https://plotly.com/dash/)**
-
-  **Python framework for analytical web apps**. **Pricing**: **Free** (10 Plotly credits trial, 1 Creator seat, 3 private viewers, 1 Dash app); **Pro $29/month or $290/year** (unlimited apps, private apps, custom URL, custom branding); **Enterprise** quote-only. Additional Viewer seats $10/seat/month . **Free tier**: Yes, 1 app and 3 viewers. **Best for**: data scientists wanting analytical dashboards in Python—**trade-off**: free tier limited to 1 app and 3 viewers; credits for Plotly Studio features.
-
-
-
-- **[Taipy](https://taipy.io/)**
-
-  **Python framework for data and AI apps**. **Pricing**: **Community Edition free** (open-source, community support); **Business Edition $360/month billed annually** (unlimited scenarios, user management, performance/scalability, 1 developer + 1 end user, 24x5 support) . **Free tier**: Yes, open-source community edition. **Best for**: teams wanting an open-source Python framework with an optional business tier—**trade-off**: business features gated behind paid plan.
-
-
+| Company / Product | Size (Revenue / Valuation) | Pricing | Free Tier Limits | Description & Best For |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Snowflake Streamlit](https://www.snowflake.com/)** | ~$110B–$120B Market Cap (NYSE: SNOW, ~$3.5B+ ARR) | Pay-as-you-go compute: Standard Edition starts at **$2.00/credit**; Warehouse runtime (XS ~1 credit/hr) or Container runtime (~0.11 credits/hr, ~$160–$175/mo continuous) | **30-day free trial** with **$400 in free compute credits**; Streamlit apps can be hosted and run during the trial period. | Streamlit apps running natively inside Snowflake. Ideal for Snowflake users needing secure data applications without moving data outside the data warehouse. |
+| **[Gradio](https://www.gradio.app/)** *(Hugging Face)* | ~$12.93B Acquisition Valuation (~$150M ARR) | Core Python library is free open source; HF Spaces PRO starts at **$9/month**, Team tier at **$20/user/month**, hardware upgrades from **$0.05/hour** (CPU) to **$1.05+/hour** (GPU) | **Forever free tier**: Unlimited public Spaces, community ZeroGPU quota allocation, 2 vCPU / 16GB RAM basic environment. | Rapidly building ML and AI demonstration web interfaces. Best for ML engineers and researchers wanting fast interactive showcases. |
+| **[Retool](https://retool.com/)** | ~$3.2B Valuation (~$120M ARR) | Team starts at **$10/builder + $5/user/month** ($8/$4 billed annually); Business tier at **$50/builder + $15/user/month** ($40/$12 billed annually) | **Forever free tier**: Up to **5 users**, unlimited web/mobile apps, 500 workflow runs/month, and 5GB Retool Database storage. | Leading low-code internal tool and UI builder with AI agent capabilities. Best for engineering teams building internal dashboards and CRUD portals. |
+| **[Superblocks](https://www.superblocks.com/)** | ~$150M–$185M Valuation (~$5M–$9M ARR, $60M raised) | Teams tier starts at **$125/month flat** (includes up to 15 builders, 1 hosted app, 100 Governed Agent Units); additional apps at **$10/app/month**; Enterprise custom | **14-day free trial** with access to the Teams tier features; no permanent free tier. | Enterprise-grade internal app builder with AI workflow orchestration and agent units. Best for teams needing flat builder pricing. |
+| **[Dash by Plotly](https://plotly.com/dash/)** | ~$18M–$50M ARR ($18.4M raised) | Dash Pro starts at **$29/month** (or $290/year billed annually); additional Viewer seats at **$10/seat/month**; Dash Enterprise custom | **Forever free tier**: **1 Dash app**, **1 Creator seat**, **3 private viewers**, and 10 Plotly Studio trial credits; open-source Python Dash library is free. | Mature Python and R data visualization web framework. Best for data science and quantitative analytics teams building complex dashboards. |
+| **[Taipy](https://taipy.io/)** | Seed-stage (~$7M raised) | Community Edition is free open source; Business Edition starts at **$360/month billed annually** ($4,320/year for 1 developer + 1 end user) | **Forever free tier**: Community Edition is completely open-source and free for unlimited apps/users (community-supported; business features excluded). | Full-stack Python framework for rapid data science and AI applications. Best for Python developers requiring high-performance scenario management. |
+| **[Anvil](https://anvil.works/)** | Bootstrapped / Profitable (~$1M–$3M ARR est.) | Hobby tier starts at **$15/month** ($144/year); Business tier starts at **$99/month**; Production dedicated server from **$1,320/month** | **Forever free tier**: Unlimited apps, 1 developer seat, 50,000 Data Table rows, 100MB storage, 30s task timeout (includes Anvil banner). | Full-stack Python platform enabling frontend and backend development entirely in pure Python. Best for Python developers wanting to avoid JS/HTML/CSS. |
 
 ## Open-Source GitHub Projects
 
