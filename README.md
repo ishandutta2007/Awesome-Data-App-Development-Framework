@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord " /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Data-App-Development-Framework/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-App-Development-Framework?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Data-App-Development-Framework/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Data-App-Development-Framework?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-App-Development-Framework/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Data-App-Development-Framework?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Data-App-Development-Framework/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -73,100 +73,100 @@ Below is a breakdown of commercial and hosted platforms, sorted by corporate siz
 
 ## 🔓 Open-Source GitHub Projects
 
-The open-source data app ecosystem is exceptionally diverse. Below are the leading frameworks and self-hosted low-code builders, **sorted in descending order by GitHub Stars ⭐**:
+The open-source data app ecosystem is exceptionally diverse. Below are the leading frameworks and self-hosted low-code builders, **sorted in descending order by GitHub_Stars ⭐**:
 
-### 1. [Streamlit](https://github.com/streamlit/streamlit) [![GitHub stars](https://img.shields.io/github/stars/streamlit/streamlit?style=social&color=white)](https://github.com/streamlit/streamlit/stargazers) 👑
+### 1. [Streamlit](https://github.com/streamlit/streamlit) [![GitHub_Stars](https://img.shields.io/github/stars/streamlit/streamlit?style=social&color=white)](https://github.com/streamlit/streamlit/stargazers) 👑
 - **License**: Apache-2.0
 - **Tech Stack**: Python, TypeScript, React
 - **Overview**: The quintessential open-source Python framework for data science and machine learning apps. Turns Python scripts into shareable interactive web applications in minutes.
 - **Key Features**: Instant component updates upon code change, rich native support for charts (Altair, Plotly, Vega-Lite), built-in session state management, caching primitives (`@st.cache_data`, `@st.cache_resource`), and an expansive third-party component ecosystem.
 - **Best For**: Data analysts, ML engineers, and researchers wanting rapid prototyping without frontend development.
 
-### 2. [Gradio](https://github.com/gradio-app/gradio) [![GitHub stars](https://img.shields.io/github/stars/gradio-app/gradio?style=social&color=white)](https://github.com/gradio-app/gradio/stargazers) ⚡
+### 2. [Gradio](https://github.com/gradio-app/gradio) [![GitHub_Stars](https://img.shields.io/github/stars/gradio-app/gradio?style=social&color=white)](https://github.com/gradio-app/gradio/stargazers) ⚡
 - **License**: Apache-2.0
 - **Tech Stack**: Python, Svelte, TypeScript
 - **Overview**: The standard framework for building machine learning demos, interactive LLM chat interfaces, and AI utility tools.
 - **Key Features**: Wrap any Python function into a web interface with `gr.Interface` or build flexible workflows with `gr.Blocks`; native media support (audio, video, webcam, 3D models); built-in sharing via public tunnel links; tight integration with Hugging Face Spaces.
 - **Best For**: AI/ML researchers and engineers demonstrating models, vision pipelines, and generative AI agents.
 
-### 3. [ToolJet](https://github.com/ToolJet/ToolJet) [![GitHub stars](https://img.shields.io/github/stars/ToolJet/ToolJet?style=social&color=white)](https://github.com/ToolJet/ToolJet/stargazers) 🛠️
+### 3. [ToolJet](https://github.com/ToolJet/ToolJet) [![GitHub_Stars](https://img.shields.io/github/stars/ToolJet/ToolJet?style=social&color=white)](https://github.com/ToolJet/ToolJet/stargazers) 🛠️
 - **License**: AGPL-3.0
 - **Tech Stack**: Node.js, TypeScript, React
 - **Overview**: Robust open-source low-code platform for creating internal tools, customer support portals, and administrative panels.
 - **Key Features**: Visual drag-and-drop canvas with 50+ pre-built widgets; native connectors for PostgreSQL, MySQL, MongoDB, DynamoDB, Snowflake, and REST/GraphQL APIs; ToolJet AI assistant for generating apps and SQL queries; granular role-based permissions (RBAC).
 - **Best For**: Engineering teams building complex internal database frontends and operational admin tools.
 
-### 4. [Appsmith](https://github.com/appsmithorg/appsmith) [![GitHub stars](https://img.shields.io/github/stars/appsmithorg/appsmith?style=social&color=white)](https://github.com/appsmithorg/appsmith/stargazers) 🧱
+### 4. [Appsmith](https://github.com/appsmithorg/appsmith) [![GitHub_Stars](https://img.shields.io/github/stars/appsmithorg/appsmith?style=social&color=white)](https://github.com/appsmithorg/appsmith/stargazers) 🧱
 - **License**: Apache-2.0
 - **Tech Stack**: Java, React, TypeScript, MongoDB
 - **Overview**: Mature and widely adopted open-source alternative to Retool for creating business applications and back-office tooling.
 - **Key Features**: 45+ customizable UI widgets; embedded JavaScript IDE for custom business logic; Git version control integration for code review and branch deployments; self-hosted with Docker or Kubernetes.
 - **Best For**: Enterprises needing strict internal governance, Git workflows, and comprehensive self-hosted database CRUD applications.
 
-### 5. [Reflex](https://github.com/reflex-dev/reflex) [![GitHub stars](https://img.shields.io/github/stars/reflex-dev/reflex?style=social&color=white)](https://github.com/reflex-dev/reflex/stargazers) 🚀
+### 5. [Reflex](https://github.com/reflex-dev/reflex) [![GitHub_Stars](https://img.shields.io/github/stars/reflex-dev/reflex?style=social&color=white)](https://github.com/reflex-dev/reflex/stargazers) 🚀
 - **License**: Apache-2.0
 - **Tech Stack**: Python, Next.js, React, FastAPI
 - **Overview**: Pure Python framework for building full-stack web applications. Python code compiles directly to a high-performance Next.js frontend backed by FastAPI.
 - **Key Features**: Write UI, state, and server logic entirely in Python; 60+ customizable components; automatic real-time WebSocket state synchronization; seamlessly extensible with custom React components.
 - **Best For**: Python developers wanting complete full-stack web development capabilities without having to learn JavaScript, CSS, or React.
 
-### 6. [Budibase](https://github.com/Budibase/budibase) [![GitHub stars](https://img.shields.io/github/stars/Budibase/budibase?style=social&color=white)](https://github.com/Budibase/budibase/stargazers) 💼
+### 6. [Budibase](https://github.com/Budibase/budibase) [![GitHub_Stars](https://img.shields.io/github/stars/Budibase/budibase?style=social&color=white)](https://github.com/Budibase/budibase/stargazers) 💼
 - **License**: GPL-3.0 / Commercial
 - **Tech Stack**: Node.js, Svelte, CouchDB
 - **Overview**: Intuitive, developer-friendly open-source low-code internal tool builder designed for speed and simplicity.
 - **Key Features**: Auto-generated CRUD interfaces directly from relational database tables; built-in internal tables; powerful automation and webhook workflow builder; lightweight Svelte client runtime.
 - **Best For**: Fast generation of internal CRUD apps, approval workflows, and database record management portals.
 
-### 7. [Dash (plotly/dash)](https://github.com/plotly/dash) [![GitHub stars](https://img.shields.io/github/stars/plotly/dash?style=social&color=white)](https://github.com/plotly/dash/stargazers) 📊
+### 7. [Dash (plotly/dash)](https://github.com/plotly/dash) [![GitHub_Stars](https://img.shields.io/github/stars/plotly/dash?style=social&color=white)](https://github.com/plotly/dash/stargazers) 📊
 - **License**: MIT
 - **Tech Stack**: Python, React, Flask, Plotly.js
 - **Overview**: The gold standard analytical application framework for Python, R, and Julia, built on top of Plotly.js data visualization.
 - **Key Features**: Declarative reactive architecture; highly configurable interactive charting; enterprise scaling with Dash Enterprise; no JavaScript required to build publication-quality interactive charts.
 - **Best For**: Data science, scientific computing, financial modeling, and business intelligence teams requiring pixel-perfect analytical dashboards.
 
-### 8. [Marimo](https://github.com/marimo-team/marimo) [![GitHub stars](https://img.shields.io/github/stars/marimo-team/marimo?style=social&color=white)](https://github.com/marimo-team/marimo/stargazers) 📓
+### 8. [Marimo](https://github.com/marimo-team/marimo) [![GitHub_Stars](https://img.shields.io/github/stars/marimo-team/marimo?style=social&color=white)](https://github.com/marimo-team/marimo/stargazers) 📓
 - **License**: Apache-2.0
 - **Tech Stack**: Python, WebAssembly (Wasm), TypeScript
 - **Overview**: Next-generation reactive notebook and data app framework. Marimo notebooks store code as pure Python scripts and instantly double as interactive web apps.
 - **Key Features**: Deterministic DAG-based reactive execution (when a cell or slider changes, only dependent cells run); interactive UI elements (sliders, dropdowns, tables) built in; export to standalone WASM web apps.
 - **Best For**: Data teams seeking reproducible interactive notebooks that easily transform into production-ready data applications.
 
-### 9. [Taipy](https://github.com/Avaiga/taipy) [![GitHub stars](https://img.shields.io/github/stars/Avaiga/taipy?style=social&color=white)](https://github.com/Avaiga/taipy/stargazers) 🧬
+### 9. [Taipy](https://github.com/Avaiga/taipy) [![GitHub_Stars](https://img.shields.io/github/stars/Avaiga/taipy?style=social&color=white)](https://github.com/Avaiga/taipy/stargazers) 🧬
 - **License**: Apache-2.0
 - **Tech Stack**: Python, React
 - **Overview**: Enterprise-ready Python library combining interactive frontends with computational pipeline orchestration and scenario management.
 - **Key Features**: Designed specifically for production data science; native support for running what-if analyses and comparative scenarios; pipeline task graph execution with caching; scalable UI builder.
 - **Best For**: Industrial AI, supply chain optimization, and production data science where backend pipeline execution is as important as the frontend.
 
-### 10. [ILLA Cloud](https://github.com/illacloud/illa-builder) [![GitHub stars](https://img.shields.io/github/stars/illacloud/illa-builder?style=social&color=white)](https://github.com/illacloud/illa-builder/stargazers) 🤖
+### 10. [ILLA Cloud](https://github.com/illacloud/illa-builder) [![GitHub_Stars](https://img.shields.io/github/stars/illacloud/illa-builder?style=social&color=white)](https://github.com/illacloud/illa-builder/stargazers) 🤖
 - **License**: Apache-2.0
 - **Tech Stack**: Go, TypeScript, React
 - **Overview**: Open-source low-code platform tailored for building internal tools and AI agent workflows.
 - **Key Features**: Drag-and-drop builder; native AI Agent integration (connect LLMs directly to app components); extensive database and API connectors; high-performance Go backend.
 - **Best For**: Teams wanting to build AI-driven internal dashboards and automation utilities.
 
-### 11. [Evidence](https://github.com/evidence-dev/evidence) [![GitHub stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers) 📈
+### 11. [Evidence](https://github.com/evidence-dev/evidence) [![GitHub_Stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers) 📈
 - **License**: MIT
 - **Tech Stack**: Svelte, DuckDB, Node.js, Markdown
 - **Overview**: Code-driven Business Intelligence and data app tool. Write Markdown and SQL to build fast, interactive data reports and executive dashboards.
 - **Key Features**: In-browser analytical queries with DuckDB-WASM; version-controlled in Git; compiles to lightning-fast static websites; eliminates fragile BI UI menus.
 - **Best For**: Analytics engineers and SQL developers who want a modern BI reporting stack that fits Git and CI/CD workflows.
 
-### 12. [Panel](https://github.com/holoviz/panel) [![GitHub stars](https://img.shields.io/github/stars/holoviz/panel?style=social&color=white)](https://github.com/holoviz/panel/stargazers) 🔬
+### 12. [Panel](https://github.com/holoviz/panel) [![GitHub_Stars](https://img.shields.io/github/stars/holoviz/panel?style=social&color=white)](https://github.com/holoviz/panel/stargazers) 🔬
 - **License**: BSD-3-Clause
 - **Tech Stack**: Python, Bokeh, Tornado
 - **Overview**: High-level app and dashboarding solution within the PyData and HoloViz ecosystem.
 - **Key Features**: Seamless interoperability with Bokeh, Matplotlib, Plotly, Altair, and PyVista; runs identically in Jupyter notebooks, standalone web servers, or static WebAssembly pages.
 - **Best For**: Scientific visualization, academic research, and complex multidimensional data exploration.
 
-### 13. [Lowdefy](https://github.com/lowdefy/lowdefy) [![GitHub stars](https://img.shields.io/github/stars/lowdefy/lowdefy?style=social&color=white)](https://github.com/lowdefy/lowdefy/stargazers) 📄
+### 13. [Lowdefy](https://github.com/lowdefy/lowdefy) [![GitHub_Stars](https://img.shields.io/github/stars/lowdefy/lowdefy?style=social&color=white)](https://github.com/lowdefy/lowdefy/stargazers) 📄
 - **License**: Apache-2.0
 - **Tech Stack**: Node.js, React, Next.js, YAML
 - **Overview**: Config-driven open-source internal tool platform. Build web apps, forms, and admin panels purely by writing YAML or JSON schema files.
 - **Key Features**: Everything as code; zero compilation friction; versioned with Git; native support for role-based authentication and database connections.
 - **Best For**: Developers who want to configure internal applications declaratively without wrestling with visual drag-and-drop builders.
 
-### 14. [Solara](https://github.com/widgetti/solara) [![GitHub stars](https://img.shields.io/github/stars/widgetti/solara?style=social&color=white)](https://github.com/widgetti/solara/stargazers) ☀️
+### 14. [Solara](https://github.com/widgetti/solara) [![GitHub_Stars](https://img.shields.io/github/stars/widgetti/solara?style=social&color=white)](https://github.com/widgetti/solara/stargazers) ☀️
 - **License**: MIT
 - **Tech Stack**: Python, React, Vue, ipywidgets
 - **Overview**: Pure Python web framework with React-like component composition and state management (`use_state`, `use_effect`).
@@ -198,7 +198,7 @@ We welcome additions, fixes, and updates from the open-source community! 💖
 
 1. 🍴 **Fork the repository**.
 2. 🌿 **Create a descriptive feature branch**: `git checkout -b add-my-framework`.
-3. 📝 **Add/update the framework**: Follow the established format including live GitHub star count badge (`style=social&color=white`), license, tech stack, and primary use cases.
+3. 📝 **Add/update the framework**: Follow the established format including live GitHub Stars_Count badge (`style=social&color=white`), license, tech stack, and primary use cases.
 4. 🚀 **Submit a Pull Request** with a clear explanation of why the tool is beneficial to data app developers.
 
 ---
